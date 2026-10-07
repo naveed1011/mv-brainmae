@@ -73,7 +73,7 @@ Both approaches recover the planted atrophy signal perfectly. Visually, you can 
 
 **mae_cross reconstruction-error maps (top: healthy CDR0, bottom: atrophic CDR2+):**
 
-![mae_cross anomaly maps](figures_smoke/fig_anomaly_maps_cross.png)
+![mae_cross anomaly maps](figures_smoke/anomaly_examples_mae_cross.png)
 
 **mae_single reconstruction-error maps:**
 
