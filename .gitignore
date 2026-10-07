@@ -1,0 +1,56 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === Virtual Environments ===
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === Project-specific — regenerated outputs ===
+data/
+outputs/
+results_smoke/
+*.pt
+*.pth
+*.ckpt
+
+# === Keep these — committed to repo ===
+# !figures_smoke/
+# !SMOKE_EVIDENCE/
+# !data/corpus/
+# !data/golden/
+
+# === IDE & System ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === Hugging Face Cache (local only) ===
+.cache/huggingface/

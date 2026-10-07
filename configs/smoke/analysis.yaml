@@ -1,0 +1,6 @@
+outputs_root: outputs/smoke
+pretrain_modes: [single, cross]
+results_dir: results_smoke
+figures_dir: figures_smoke
+synthetic_run: true
+thresholds: {h1_margin: 0.02, h2_margin: 0.005, h3_auc: 0.6, h4_r: 0.4, h0_margin: 0.15}

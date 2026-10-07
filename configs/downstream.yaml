@@ -1,0 +1,20 @@
+# ============================================================ Stage 3
+# Frozen-feature probes (GroupKFold, label efficiency) + finetuning + age probe.
+factory_dir: data/factory
+outputs_root: outputs
+results_dir: results
+view: axial
+encoders: [mae_single, mae_cross, imagenet, scratch]
+timm_model: vit_small_patch16_224   # needs Kaggle "Internet" ON for first download
+label_fracs: [0.1, 0.25, 0.5, 1.0]
+feat_batch_size: 256
+num_workers: 4
+seed: 42
+device: auto
+finetune:
+  encoders: [mae_single, mae_cross]  # add imagenet here if you have GPU hours to spare
+  folds: 3
+  epochs: 8
+  batch_size: 64
+  encoder_lr: 3.0e-4
+  head_mult: 5.0

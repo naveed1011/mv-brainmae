@@ -1,0 +1,13 @@
+# ============================================================ Stage 1 config
+# Raw OASIS-1 volumes -> QC'd 16-bit PNG slices + leakage-free splits.
+# See docs/KAGGLE_SETUP.md for how to obtain/attach the data.
+root: data/oasis1                  # <- on Kaggle: /kaggle/input/<your-dataset>
+out_dir: data/factory
+img_size: 224
+min_brain_frac: 0.05               # drop near-empty slices
+bg_thresh: 0.08                    # background level of skull-stripped volumes
+views: [axial, coronal]
+split_ratios: {train: 0.7, val: 0.1, test: 0.2}
+n_folds: 5                         # GroupKFold folds over TRAIN subjects
+seed: 42
+source: oasis1

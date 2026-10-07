@@ -1,0 +1,21 @@
+# Smoke pretrain — single-view MAE, tiny model, 2 epochs, CPU-ok
+mode: cross
+factory_dir: data/factory_smoke
+out_dir: outputs/smoke/pretrain_cross
+batch_size: 8
+epochs: 2
+lr: 3.0e-4
+weight_decay: 0.05
+warmup_frac: 0.1
+amp: false
+device: auto
+num_workers: 0
+seed: 42
+log_every: 5
+eval_every: 1
+save_every: 1
+max_steps_per_epoch: 6
+max_minutes: 10
+model: {img_size: 64, patch: 8, in_chans: 1, embed_dim: 96, depth: 2, heads: 3,
+        mlp_ratio: 4.0, dec_dim: 64, dec_depth: 1, dec_heads: 2,
+        mask_ratio: 0.75, norm_pix: true, n_views: 2, dropout: 0.0}

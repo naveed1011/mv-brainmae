@@ -1,0 +1,19 @@
+mode: single
+factory_dir: data/factory_pilot
+out_dir: outputs/pilot/pretrain_single
+batch_size: 32
+epochs: 15
+lr: 3.0e-4
+weight_decay: 0.05
+warmup_frac: 0.1
+amp: false                 # CPU
+device: auto
+num_workers: 2
+seed: 42
+log_every: 25
+eval_every: 3
+save_every: 5
+max_minutes: 240
+model: {img_size: 128, patch: 16, in_chans: 1, embed_dim: 192, depth: 4,
+        heads: 3, mlp_ratio: 4.0, dec_dim: 128, dec_depth: 1, dec_heads: 2,
+        mask_ratio: 0.75, norm_pix: true, n_views: 2, dropout: 0.0}

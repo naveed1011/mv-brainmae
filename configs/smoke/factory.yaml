@@ -1,0 +1,11 @@
+# Smoke-test factory config (synthetic data, tiny images, CPU-fast)
+root: data/synthetic
+out_dir: data/factory_smoke
+img_size: 64
+min_brain_frac: 0.05
+bg_thresh: 0.08
+views: [axial, coronal]
+split_ratios: {train: 0.6, val: 0.2, test: 0.2}
+n_folds: 3
+seed: 42
+source: synthetic

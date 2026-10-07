@@ -1,0 +1,10 @@
+factory_dir: data/factory_pilot
+outputs_root: outputs/pilot
+results_dir: results_pilot
+figures_dir: figures_pilot
+encoders: [mae_single, mae_cross]
+bg_thresh: 0.08
+topk: 0.25
+batch_size: 32
+device: auto
+seed: 42

@@ -1,0 +1,20 @@
+{
+  "mae_single": {
+    "auc_topk": 1.0,
+    "auc_mean": 1.0,
+    "n_test_subjects": 7,
+    "spearman_nwbv": -0.9285714285714288,
+    "spearman_nwbv_p": 0.0025194724037946887,
+    "spearman_age": 0.9285714285714288,
+    "healthy_ref_mean": 0.55157949924469
+  },
+  "mae_cross": {
+    "auc_topk": 1.0,
+    "auc_mean": 1.0,
+    "n_test_subjects": 7,
+    "spearman_nwbv": -0.9285714285714288,
+    "spearman_nwbv_p": 0.0025194724037946887,
+    "spearman_age": 0.9285714285714288,
+    "healthy_ref_mean": 0.5512471753817338
+  }
+}

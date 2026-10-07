@@ -1,0 +1,14 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/mv-brainmae-run-all",
+  "title": "MV-BrainMAE — run-all (multi-view brain MRI foundation model)",
+  "code_file": "run_all_kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["YOUR_KAGGLE_USERNAME/oasis1"],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

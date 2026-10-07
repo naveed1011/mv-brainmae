@@ -1,0 +1,21 @@
+# ============================================================ Stage 2 (arm A)
+# Standard single-view MAE pretraining (control arm).
+mode: single
+factory_dir: data/factory
+out_dir: outputs/pretrain_single
+batch_size: 128
+epochs: 60
+lr: 1.5e-4
+weight_decay: 0.05
+warmup_frac: 0.05
+amp: true
+device: auto
+num_workers: 4
+seed: 42
+log_every: 50
+eval_every: 2
+save_every: 5
+max_minutes: 600                   # Kaggle 12h-session guard; ckpt stays resumable
+model: {img_size: 224, patch: 16, in_chans: 1, embed_dim: 384, depth: 6,
+        heads: 6, mlp_ratio: 4.0, dec_dim: 256, dec_depth: 2, dec_heads: 4,
+        mask_ratio: 0.75, norm_pix: true, n_views: 2, dropout: 0.0}

@@ -1,0 +1,12 @@
+# CPU pilot on REAL OASIS-1 volumes (laptop-friendly subset)
+root: data/oasis1
+out_dir: data/factory_pilot
+img_size: 128
+min_brain_frac: 0.05
+bg_thresh: 0.08
+views: [axial, coronal]
+split_ratios: {train: 0.7, val: 0.1, test: 0.2}
+n_folds: 3
+max_subjects: 120          # <- the laptop cap
+seed: 42
+source: oasis1

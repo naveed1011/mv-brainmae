@@ -1,0 +1,18 @@
+factory_dir: data/factory_pilot
+outputs_root: outputs/pilot
+results_dir: results_pilot
+view: axial
+encoders: [mae_single, mae_cross, scratch]   # imagenet arm optional on CPU
+timm_model: vit_small_patch16_224
+label_fracs: [0.25, 0.5, 1.0]
+feat_batch_size: 64
+num_workers: 2
+seed: 42
+device: auto
+finetune:
+  encoders: [mae_single, mae_cross]
+  folds: 2
+  epochs: 3
+  batch_size: 16
+  encoder_lr: 3.0e-4
+  head_mult: 5.0

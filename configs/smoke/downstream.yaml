@@ -1,0 +1,19 @@
+# Smoke downstream: all four arms, tiny budgets, CPU-ok
+factory_dir: data/factory_smoke
+outputs_root: outputs/smoke
+results_dir: results_smoke
+view: axial
+encoders: [mae_single, mae_cross, imagenet, scratch]
+timm_model: vit_small_patch16_224
+label_fracs: [0.25, 0.5, 1.0]
+feat_batch_size: 8
+num_workers: 0
+seed: 42
+device: auto
+finetune:
+  encoders: [mae_single, mae_cross]
+  folds: 2
+  epochs: 2
+  batch_size: 8
+  encoder_lr: 3.0e-4
+  head_mult: 5.0

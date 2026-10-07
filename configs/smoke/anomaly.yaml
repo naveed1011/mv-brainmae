@@ -1,0 +1,10 @@
+factory_dir: data/factory_smoke
+outputs_root: outputs/smoke
+results_dir: results_smoke
+figures_dir: figures_smoke
+encoders: [mae_single, mae_cross]
+bg_thresh: 0.08
+topk: 0.25
+batch_size: 32
+device: auto
+seed: 42

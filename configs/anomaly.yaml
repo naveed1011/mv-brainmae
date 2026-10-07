@@ -1,0 +1,12 @@
+# ============================================================ Stage 4
+# Reconstruction-error anomaly maps (unsupervised) + clinical correlations.
+factory_dir: data/factory
+outputs_root: outputs
+results_dir: results
+figures_dir: figures
+encoders: [mae_single, mae_cross]
+bg_thresh: 0.08
+topk: 0.25
+batch_size: 64
+device: auto
+seed: 42

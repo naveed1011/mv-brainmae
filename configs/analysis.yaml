@@ -1,0 +1,13 @@
+# ============================================================ Stage 5
+# Figures + auto hypothesis verdicts (thresholds below are pre-registered).
+outputs_root: outputs
+pretrain_modes: [single, cross]
+results_dir: results
+figures_dir: figures
+synthetic_run: false
+thresholds:
+  h0_margin: 0.15     # synthetic gate: test bal-acc must beat chance by this
+  h1_margin: 0.02     # mae_single must beat imagenet by > this (TEST bal-acc)
+  h2_margin: 0.005    # cross minus single >= this counts as SUPPORTED
+  h3_auc: 0.60        # anomaly AUC floor
+  h4_r: 0.40          # age-probe Pearson r floor
