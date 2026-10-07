@@ -77,7 +77,7 @@ Both approaches recover the planted atrophy signal perfectly. Visually, you can 
 
 **mae_single reconstruction-error maps:**
 
-![mae_single anomaly maps](figures_smoke/fig_anomaly_maps_single.png)
+![mae_single anomaly maps](figures_smoke/anomaly_examples_mae_single.png)
 
 Quantitatively, anomaly scores correlate strongly with clinical markers:
 
